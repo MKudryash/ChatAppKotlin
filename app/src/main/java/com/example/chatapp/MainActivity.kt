@@ -20,10 +20,12 @@ class MainActivity : AppCompatActivity() {
     {
         binding.btnSignIn.setOnClickListener()
         {
-            addDataToFirestore()
+
         }
     }
-    private fun addDataToFirestore() {
+
+    //Test Connection Database
+    /*private fun addDataToFirestore() {
         val dataBase = FirebaseFirestore.getInstance()
         val data = HashMap<String, Any>()
         data["first_name"] = "Julia"
@@ -43,5 +45,5 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-    }
+    }*/
 }
