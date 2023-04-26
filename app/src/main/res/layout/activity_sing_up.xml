@@ -8,7 +8,7 @@
 
     android:padding="30dp"
     android:scrollbars="none"
-    tools:context=".Sing_Up">
+    tools:context=".activities.Sing_Up">
 
     <LinearLayout
         android:layout_width="match_parent"

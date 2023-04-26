@@ -1,17 +1,15 @@
-package com.example.chatapp
+package com.example.chatapp.activities
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.chatapp.databinding.ActivityMainBinding
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.FirebaseFirestore
+import com.example.chatapp.databinding.ActivitySigininBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class SignIn : AppCompatActivity() {
+    lateinit var binding: ActivitySigininBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySigininBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setListeners()
     }
@@ -21,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnSignIn.setOnClickListener()
         {
 
+        }
+        binding!!.txtCreateNewAccount.setOnClickListener()
+        {
+            startActivities(arrayOf(Intent(this,Sing_Up::class.java)))
         }
     }
 
