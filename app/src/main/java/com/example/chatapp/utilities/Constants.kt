@@ -2,13 +2,13 @@ package com.example.chatapp.utilities
 
 class Constants {
     companion object {
-        const val KEY_COLLECTION_USERS = "users"
-        const val KEY_NAME = "name"
-        const val KEY_EMAIL = "email"
-        const val KEY_PASSWORD = "password"
-        const val KEY_PREFERENCE_NAME = "ChatAppPreference"
-        const val KEY_IS_MAIN_CHAT = "isMainChat"
-        const val KEY_USER_ID = "userId"
-        const val KEY_IMAGE = "image"
+        var KEY_COLLECTION_USERS = "users"
+        var KEY_NAME = "name"
+        var KEY_EMAIL = "email"
+        var KEY_PASSWORD = "password"
+        var KEY_PREFERENCE_NAME = "ChatAppPreference"
+        var KEY_IS_MAIN_CHAT = "isMainChat"
+        var KEY_USER_ID = "userId"
+        var KEY_IMAGE = "image"
     }
 }
